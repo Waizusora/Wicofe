@@ -65,6 +65,8 @@ These are project decisions and targets, not claims of completed support.
 
 The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
 
+The userspace syscall ABI is owned by [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI). The separate privileged DKM ABI is owned by [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel); it must not be treated as the userspace syscall ABI. See the kernel repository's [ABI boundary specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/ABI_BOUNDARIES.md).
+
 ## 5. Memory management direction
 
 The current kernel design direction is a staged hybrid:
