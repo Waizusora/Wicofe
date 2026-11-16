@@ -39,7 +39,9 @@ This is a target architecture, not a statement that every component is implement
 
 See [Project documentation index](docs/INDEX.md) and [Repository map](docs/REPOSITORY_MAP.md) for whole-system architecture, repository ownership, and cross-project responsibilities.
 
-The [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) links each component to its own technical documentation.\n\nProject-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
+The [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) links each component to its own technical documentation.
+
+Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
 
 ## Architecture and planning
 
