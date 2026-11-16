@@ -78,6 +78,9 @@ The roadmap is dependency-driven. A milestone is complete only when its exit cri
 ## Phase 7 — Reliability and release engineering
 
 - [ ] Implement installer, updater, and recovery workflows.
+- [ ] Provide a text-based installer environment with the planned `wicofe-install` entry point and verified install-to-first-boot flow.
+- [ ] Define WPM CLI coordination with Wicofe-Update for the planned `wpm sync` / `wpm upgrade` user workflow.
+- [ ] Define Delivery Release quality gates, flexible stable-delivery cadence, and out-of-band critical security deliveries.
 - [ ] Add cross-repository integration and conformance suites.
 - [ ] Establish security response and vulnerability disclosure process.
 - [ ] Audit all shipped dependencies and license obligations.
