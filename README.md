@@ -47,6 +47,9 @@ Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wico
 - [Roadmap](docs/ROADMAP.md)
 - [Architecture decision records](decisions/README.md)
 - [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Project governance](https://github.com/Waizusora/Wicofe-Docs/blob/main/GOVERNANCE.md)
+- [License and third-party policy](https://github.com/Waizusora/Wicofe-Docs/blob/main/LICENSE_POLICY.md)
 
 ## Project principles
 
