@@ -8,6 +8,7 @@ This repository documents the whole Wicofe operating system at project level. It
 - [Roadmap](ROADMAP.md)
 - [Repository map](REPOSITORY_MAP.md)
 - [Architecture decision records](../decisions/README.md)
+- [OSynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Security policy](../SECURITY.md)
 
