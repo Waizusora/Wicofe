@@ -28,7 +28,7 @@ Firmware
           └─ Syscall interface (Wicofe ABI)
               └─ Userspace
                   ├─ Wicofe-Libc / Wicofe-Lib
-                  ├─ Osynit (PID 1 and service supervision)
+                  ├─ OSynit (PID 1 and service supervision)
                   ├─ Mysh (planned default shell integration)
                   ├─ WPM (package manager)
                   └─ WDE (desktop environment)
@@ -45,6 +45,8 @@ The [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/ma
 Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
 
 ## Architecture and planning
+
+- [OSynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — canonical init architecture and responsibility boundaries.
 
 - [System architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
