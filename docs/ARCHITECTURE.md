@@ -60,11 +60,11 @@ These are project decisions and targets, not claims of completed support.
 | Concrete optional driver implementations and driver-specific packaging | Wicofe-Drivers |
 | C runtime and libc integration | Wicofe-Libc |
 | Shared userspace libraries | Wicofe-Lib |
-| PID 1 and service definitions | Osynit |
+| PID 1, service definitions, dependency resolution, supervision and shutdown | [OSynit](https://github.com/Waizusora/Osynit) |
 | Package format and package operations | WPM |
 | Desktop session and compositor | WDE |
 
-The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
+OSynit is Wicofe's userspace initializer and service lifecycle supervisor. Its mandatory Core Init responsibilities, optional modules, single-executable model and external-service boundary are defined in the [OSynit system specification](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md). The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
 
 The userspace syscall ABI is owned by [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI). The separate privileged DKM ABI is owned by [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel); it must not be treated as the userspace syscall ABI. See the kernel repository's [ABI boundary specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/ABI_BOUNDARIES.md).
 
