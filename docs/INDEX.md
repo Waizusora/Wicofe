@@ -17,6 +17,10 @@ This repository documents the whole Wicofe operating system at project level. It
 - [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
 - [Cross-component specifications](https://github.com/Waizusora/Wicofe-Specs)
 
-## Historical material\n\n- [Archived full OS blueprint 0.1](archive/FULL_OS_BLUEPRINT_0.1.md) — retained for history only; superseded by the current architecture, roadmap, and repository map.\n\n## Boundary
+## Historical material
+
+- [Archived full OS blueprint 0.1](archive/FULL_OS_BLUEPRINT_0.1.md) — retained for history only; superseded by the current architecture, roadmap, and repository map.
+
+## Boundary
 
 This repository owns whole-system architecture, project direction, repository relationships, and project-level decisions. Kernel internals belong in Wicofe-Kernel; public syscall ABI in Wicofe-ABI; ONWFS disk format in ONWFS; and shared contracts in Wicofe-Specs. User, administrator, and developer guides belong in Wicofe-Docs.
