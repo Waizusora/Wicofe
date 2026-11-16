@@ -16,7 +16,7 @@ This document defines the intended responsibility of each Wicofe repository. It 
 
 | Repository | Responsibility |
 |---|---|
-| [OSynit](https://github.com/Waizusora/Osynit) | PID 1, boot orchestration, service definitions, dependency ordering, supervision, shutdown |
+| [Osynit](https://github.com/Waizusora/Osynit) | PID 1, boot orchestration, service definitions, dependency ordering, supervision, shutdown |
 | [WPM](https://github.com/Waizusora/WPM) | Package manager, package metadata/format, repositories, dependency and transaction model |
 | [Wicofe-Storage](https://github.com/Waizusora/Wicofe-Storage) | Userspace storage discovery, partitioning, formatting, mount and volume tools; kernel storage interfaces remain in Kernel |
 | [Wicofe-Drivers](https://github.com/Waizusora/Wicofe-Drivers) | Driver source/packaging and DKM integration guidance; core driver framework remains in Kernel |
@@ -63,6 +63,6 @@ These repositories now exist. Their initial README files define scope and owners
 2. ABI definitions belong in Wicofe-ABI; kernel and userspace implementations must not independently redefine them.
 3. ONWFS owns its disk-format specification and filesystem-specific tests; Kernel owns VFS integration.
 4. Wicofe-Drivers does not duplicate the kernel's driver core.
-5. OSynit owns service lifecycle; individual daemons belong to Wicofe-Services or their subsystem.
+5. Osynit owns service lifecycle; individual daemons belong to Wicofe-Services or their subsystem.
 6. WDE is a userspace desktop and must not require private kernel APIs.
 7. Cross-repository integration tests should eventually be centralized in Wicofe-Tests.
