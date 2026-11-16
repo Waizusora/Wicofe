@@ -29,6 +29,7 @@ Firmware
               └─ Userspace
                   ├─ Wicofe-Libc / Wicofe-Lib
                   ├─ Osynit (PID 1 and service supervision)
+                  ├─ Mysh (planned default shell integration)
                   ├─ WPM (package manager)
                   └─ WDE (desktop environment)
 ```
