@@ -6,6 +6,7 @@ This repository documents the whole Wicofe operating system at project level. It
 
 - [System architecture](ARCHITECTURE.md)
 - [Roadmap](ROADMAP.md)
+- [System delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md) — planned CLI installation, WPM update entry point and Delivery Release model; not implementation evidence.
 - [Repository map](REPOSITORY_MAP.md)
 - [Architecture decision records](../decisions/README.md)
 - [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md)
