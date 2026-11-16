@@ -39,6 +39,8 @@ This is a target architecture, not a statement that every component is implement
 
 See [Repository map](docs/REPOSITORY_MAP.md) for ownership boundaries and cross-project responsibilities.
 
+Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
+
 ## Architecture and planning
 
 - [System architecture](docs/ARCHITECTURE.md)
