@@ -1,6 +1,6 @@
 # Wicofe Repository Map
 
-This document defines the intended responsibility of each Wicofe repository. It is a project map, not a statement that all repositories already contain working implementations.
+This document defines the intended responsibility of each Wicofe repository. It is a project map, not a statement that all repositories already contain working implementations. For per-repository documentation ownership and canonical technical indexes, see the [Wicofe-Docs repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md).
 
 ## Core and interfaces
 
