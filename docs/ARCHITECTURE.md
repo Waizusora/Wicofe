@@ -56,7 +56,8 @@ These are project decisions and targets, not claims of completed support.
 | Syscall numbers, structures, errors, calling convention | Wicofe-ABI |
 | Kernel implementation and VFS integration | Wicofe-Kernel |
 | Native filesystem format and implementation | ONWFS |
-| Driver and DKM interfaces | Wicofe-Kernel / Wicofe-Drivers |
+| Driver core, DKM loader, and privileged DKM ABI | Wicofe-Kernel |
+| Concrete optional driver implementations and driver-specific packaging | Wicofe-Drivers |
 | C runtime and libc integration | Wicofe-Libc |
 | Shared userspace libraries | Wicofe-Lib |
 | PID 1 and service definitions | Osynit |
