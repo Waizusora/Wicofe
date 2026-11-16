@@ -31,7 +31,7 @@ This document defines the intended responsibility of each Wicofe repository. It 
 | Repository | Responsibility |
 |---|---|
 | [WDE](https://github.com/Waizusora/WDE) | Wayland desktop environment, compositor, panel, launcher, session, settings |
-| [Mysh](https://github.com/Waizusora/Mysh) | Command-line shell; Wicofe integration is a target in addition to its existing platform work |
+| [Mysh](https://github.com/Waizusora/Mysh) | Independent command-line shell; Wicofe integration is a planned shell target. Package management belongs to WPM, not Mysh |
 | [Wicofe-Installer](https://github.com/Waizusora/Wicofe-Installer) | Installation workflow, disk layout, deployment, and first-boot setup |
 | [Wicofe-Update](https://github.com/Waizusora/Wicofe-Update) | Update metadata, verification, staging, rollback, and system update client |
 | [Wicofe-Recovery](https://github.com/Waizusora/Wicofe-Recovery) | Recovery environment, repair workflows, diagnostics, and restore |
