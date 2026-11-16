@@ -44,6 +44,10 @@ The [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/ma
 
 Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
 
+## Installation and release direction
+
+The planned user experience is a text-based installation CLI started with `wicofe-install`, followed by user-initiated updates from Terminal. The project-defined **Delivery Release** model targets roughly monthly stable deliveries without a fixed release deadline, with urgent security fixes delivered out of band when validated. These are plans, not implemented capabilities; see the [system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md).
+
 ## Architecture and planning
 
 - [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — canonical init architecture and responsibility boundaries.
