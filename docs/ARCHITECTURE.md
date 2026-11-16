@@ -62,6 +62,11 @@ These are project decisions and targets, not claims of completed support.
 | Shared userspace libraries | Wicofe-Lib |
 | PID 1, service definitions, dependency resolution, supervision and shutdown | [Osynit](https://github.com/Waizusora/Osynit) |
 | Package format and package operations | WPM |
+| Whole-system release discovery, staging, activation and rollback | Wicofe-Update |
+| Image manifest, system image composition and release artifacts | Wicofe-Image |
+| Installation CLI/workflow and deployment orchestration | Wicofe-Installer |
+| Whole-system build orchestration and artifact provenance | Wicofe-Build |
+| Recovery environment, repair and restore | Wicofe-Recovery |
 | Desktop session and compositor | WDE |
 
 Osynit is Wicofe's userspace initializer and service lifecycle supervisor. Its mandatory Core Init responsibilities, optional modules, single-executable model and external-service boundary are defined in the [Osynit system specification](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md). The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
