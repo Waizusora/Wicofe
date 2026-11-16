@@ -16,3 +16,4 @@ Do not silently rewrite an accepted decision. Supersede it with a new ADR and li
 ## Initial records
 
 - [0001 — Project baseline](0001-project-baseline.md)
+- [0002 — OSynit init architecture](0002-osynit-init-architecture.md)
