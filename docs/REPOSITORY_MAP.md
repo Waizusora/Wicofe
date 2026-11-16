@@ -45,17 +45,17 @@ This document defines the intended responsibility of each Wicofe repository. It 
 | [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) | Developer SDK, target definitions, headers, templates, sysroot and tooling integration |
 | [Wicofe-Ports](https://github.com/Waizusora/Wicofe-Ports) | Port recipes, patches, build metadata, and upstream tracking |
 
-## Repositories still to be created
+## Project-wide engineering repositories
 
-| Planned repository | Intended responsibility |
+| Repository | Responsibility |
 |---|---|
-| Wicofe-Tools | General system utilities and command-line tools not owned by a narrower subsystem |
-| Wicofe-Docs | User, administrator, and developer manuals if documentation volume warrants a separate publication repository |
-| Wicofe-Specs | Canonical detailed technical specifications and machine-readable interface definitions |
-| Wicofe-Tests | Cross-repository integration, conformance, regression, and system tests |
-| Wicofe-ThirdParty | Third-party source mirrors or integration metadata, patches, provenance, and license records |
+| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared development tooling, repository validation, release helpers, and audit utilities |
+| [Wicofe-Docs](https://github.com/Waizusora/Wicofe-Docs) | User, administrator, developer, and contributor documentation |
+| [Wicofe-Specs](https://github.com/Waizusora/Wicofe-Specs) | Normative cross-component specifications and compatibility contracts |
+| [Wicofe-Tests](https://github.com/Waizusora/Wicofe-Tests) | Cross-repository integration, conformance, regression, and system tests |
+| [Wicofe-ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty) | Third-party inventory, provenance, license records, and patch tracking |
 
-Until those repositories exist, system-wide docs and decisions live here; component-specific specs remain in their owning repositories.
+These repositories now exist. Their initial README files define scope and ownership; implementation, policy adoption, and CI coverage are separate milestones.
 
 ## Boundary rules
 
