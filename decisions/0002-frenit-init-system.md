@@ -7,7 +7,7 @@
 
 ## Context
 
-Wicofe requires a native userspace init system. The canonical implementation repository is Frenit. Earlier Osynit-specific code, specifications, command names, and architecture decisions are not adopted or treated as compatibility requirements.
+Wicofe requires a native userspace init system. The canonical implementation repository is Frenit. Earlier init-system proposals, code, specifications, command names, and architecture decisions are not adopted or treated as compatibility requirements.
 
 ## Decision
 
@@ -23,7 +23,7 @@ Wicofe requires a native userspace init system. The canonical implementation rep
 ## Consequences
 
 - Wicofe documentation and repository maps refer to Frenit as the init-system project.
-- Existing Osynit-specific architecture and boot/service contracts are withdrawn from the Wicofe specification index and are not copied into Frenit.
+- Existing proposal-specific architecture and boot/service contracts are withdrawn from the Wicofe specification index and are not copied into Frenit.
 - Kernel/ABI integration is staged only after the relevant primitives are specified and implemented.
 - Build, image, and installer repositories must consume the Frenit artifact only after its target ABI and packaging contract are validated.
 
