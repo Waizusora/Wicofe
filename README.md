@@ -28,7 +28,7 @@ Firmware
           └─ Syscall interface (Wicofe ABI)
               └─ Userspace
                   ├─ Wicofe-Libc / Wicofe-Lib
-                  ├─ Osynit (PID 1 and service supervision)
+                  ├─ Frenit (Free Init; PID 1 integration is not yet implemented)
                   ├─ Mysh (planned default shell integration)
                   ├─ WPM (package manager)
                   └─ WDE (desktop environment)
@@ -50,7 +50,7 @@ The planned user experience is a text-based installation CLI started with `wicof
 
 ## Architecture and planning
 
-- [Osynit system specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) — canonical init architecture and responsibility boundaries.
+- [Frenit repository](https://github.com/Waizusora/Frenit) — canonical init implementation; Wicofe integration contract remains proposed.
 
 - [System architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
