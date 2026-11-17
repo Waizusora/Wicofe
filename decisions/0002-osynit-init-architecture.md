@@ -1,44 +1,33 @@
-# ADR 0002: Osynit Init and Service Lifecycle Architecture
+# ADR 0002: Frenit Init-System Direction
 
-- **Status:** Accepted
-- **Date:** 2026-11-16
-- **Canonical project:** [Osynit](https://github.com/Waizusora/Osynit)
-- **Cross-component contract:** [Osynit Core Architecture Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md)
+- **Status:** Accepted project naming and repository ownership; runtime architecture remains proposed
+- **Date:** 2026-11-18
+- **Canonical project:** [Frenit](https://github.com/Waizusora/Frenit)
+- **Cross-component contract:** [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
 
 ## Context
 
-Wicofe needs a native userspace initializer and service lifecycle supervisor. Its responsibilities must be separated from kernel mechanisms and from the domain logic of individual system daemons. The project also needs a stable identity, executable name, command namespace, and cross-repository ownership boundary.
+Wicofe requires a native userspace init system. The canonical implementation repository is Frenit. Earlier Osynit-specific code, specifications, command names, and architecture decisions are not adopted or treated as compatibility requirements.
 
 ## Decision
 
-1. The project name is **Osynit**, expanded as **Open System Initialize**.
-2. The only official executable and command prefix is `osynit`.
-3. The same executable has two modes: init mode when launched as PID 1, and explicit client mode for subcommands outside PID 1. Client mode never starts another manager.
-4. Core Init has twelve mandatory logical responsibilities: Kernel Interface, Process Supervisor, Service Manager, Dependency Manager, Boot Manager, System State Manager, Signal Manager, Shutdown Manager, Configuration Loader, Runtime Manager, Failure Recovery Manager, and IPC / Control Interface.
-5. Mount, socket activation, timer activation, logging backends, resource/cgroup integration, security sandboxing, watchdog integration, and advanced job control are optional modules. Their absence must not prevent Core Init from operating.
-6. Network, device, storage, user/session, time, audio, graphics, desktop, and container domain behavior belongs to external services or narrower subsystem repositories. Osynit supervises their lifecycle but does not embed their domain logic in PID 1.
-7. The initial local manager endpoint is `/run/osynit/osynit.sock`. The protocol must be versioned, framed, bounded, permission-checked, and authorized per operation.
-8. Kernel mechanisms and public userspace ABI remain owned by Wicofe-Kernel and Wicofe-ABI. Osynit must not invent syscall numbers or assume Linux-only facilities.
-9. The complete command namespace is documented as a planned interface. A listed command is not considered implemented until code and tests demonstrate it.
+1. The project name is **Frenit**, expanded as **Free Init**.
+2. The canonical repository is `Waizusora/Frenit`.
+3. The executable, Cargo package, library crate, and command prefix are `frenit`.
+4. The CLI command shape is `frenit <domain> <action> [argument]`; help and version entry points are `frenit help [domain]` and `frenit --version`.
+5. The CLI naming conventions are `diagnostic`, `dependent`, and `command` (singular).
+6. The Frenit repository is authoritative for its implementation. Wicofe-Kernel owns kernel mechanisms; Wicofe-ABI owns public syscall contracts; Wicofe-Specs owns cross-component requirements; Wicofe-Tests owns integration/conformance tests.
+7. PID 1 startup, process lifecycle, signal/wait semantics, service IPC, shutdown, and boot-image handoff remain integration prerequisites. No unsupported kernel syscall or runtime capability may be assumed.
+8. The current Frenit README explicitly identifies the code as an early foundation and not yet safe to install as PID 1. Wicofe must preserve that status until native conformance evidence exists.
 
 ## Consequences
 
-- Osynit remains a small, auditable Rust userspace component with platform-specific operations isolated behind an interface.
-- Wicofe-Specs coordinates shared boot and service contracts.
-- Wicofe-Build, Wicofe-Image, and Wicofe-Installer integrate the binary and configuration through versioned artifact/boot contracts.
-- Wicofe-Services and narrower repositories own daemon domain behavior.
-- Implementation and verification status must be tracked separately for every target architecture.
-- This ADR accepts the architecture boundary; it does not claim native PID 1, IPC, complete CLI, or bootable image support.
-
-## Alternatives considered
-
-- **Embed every manager in PID 1:** rejected because it expands the privileged core and couples unrelated domain behavior to the init process.
-- **Create separate init and control executables:** rejected in favor of one executable with defensive PID 1/client dispatch.
-- **Require all optional managers at boot:** rejected because optional facilities must not become prerequisites for Core Init.
-- **Implement network/device/storage managers inside Osynit:** rejected; these remain external services.
+- Wicofe documentation and repository maps refer to Frenit as the init-system project.
+- Existing Osynit-specific architecture and boot/service contracts are withdrawn from the Wicofe specification index and are not copied into Frenit.
+- Kernel/ABI integration is staged only after the relevant primitives are specified and implemented.
+- Build, image, and installer repositories must consume the Frenit artifact only after its target ABI and packaging contract are validated.
 
 ## References
 
-- [Osynit System Specification 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md)
-- [Osynit CLI Reference 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/CLI_REFERENCE_0.1.md)
-- [Osynit Core Architecture Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md)
+- [Frenit README and CLI convention](https://github.com/Waizusora/Frenit/blob/main/README.md)
+- [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
