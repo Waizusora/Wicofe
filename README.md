@@ -74,3 +74,7 @@ The planned user experience is a text-based installation CLI started with `wicof
 ## Licensing
 
 Original Wicofe code is intended to use the Mozilla Public License 2.0 (MPL-2.0), unless a repository explicitly documents an approved exception. Third-party components retain their own licenses. See each repository's license and dependency notices before reuse.
+
+## Wicofe-wide principles
+
+Wicofe is a Unix-like, POSIX-compatible, non-GNU alternative. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Docs/blob/main/PROJECT_PRINCIPLES.md).
