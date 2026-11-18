@@ -8,7 +8,7 @@ This document defines the intended responsibility of each Wicofe repository. It 
 |---|---|
 | [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel) | Monolithic Rust kernel, architecture support, memory, scheduler, syscall implementation, VFS, module framework |
 | [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI) | Draft public kernel/userspace ABI baseline, syscall contract, and shared interface definitions; not yet declared stable |
-| [WLibc](https://github.com/Waizusora/Wicofe-Libc) | C standard library and POSIX runtime adapted to the native Wicofe ABI; GNU/BSD compatibility extensions are out of scope |
+| [WLibc](https://github.com/Waizusora/WLibc) | C standard library and POSIX runtime adapted to the native Wicofe ABI; GNU/BSD compatibility extensions are out of scope |
 | [Wicofe-Lib](https://github.com/Waizusora/Wicofe-Lib) | Shared Wicofe userspace libraries and Rust-facing support APIs |
 | [ONWFS](https://github.com/Waizusora/ONWFS) | Native filesystem format, implementation, tooling, and compatibility tests |
 
