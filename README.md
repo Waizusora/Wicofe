@@ -10,7 +10,10 @@ Wicofe is an independent Unix-like operating system project built around a Rust-
 - x86-64 and AArch64 as initial architecture targets.
 - Dynamic Kernel Modules (DKM) for optional kernel components, subject to a versioned and documented module ABI.
 - A kernel-owned VFS with ONWFS as the planned native filesystem.
-- Unix-like userspace interfaces, with POSIX compatibility as a long-term objective.
+- Unix-like userspace targeting POSIX conformance through a native Wicofe ABI.
+- Traditional Unix filesystem hierarchy (WFH), with system layout and mount responsibilities specified by Wicofe.
+- Wlibc, based on a planned musl fork, as the native ISO C/POSIX C runtime; GNU and BSD compatibility extensions are not project targets.
+- IANA TZ Database/TZif in userspace; the kernel provides UTC-based clocks and monotonic time.
 - Rust `std` for userspace where practical; FFI only at necessary OS or library boundaries.
 - MPL-2.0 for original Wicofe components, with dependency-by-dependency license and provenance review.
 
@@ -24,10 +27,10 @@ Firmware
           ├─ Memory management
           ├─ Scheduler and process model
           ├─ VFS ── ONWFS / FAT32 / future filesystems
-          ├─ Driver framework and DKM
           └─ Syscall interface (Wicofe ABI)
               └─ Userspace
-                  ├─ Wicofe-Libc / Wicofe-Lib
+                  ├─ Wlibc (ISO C / POSIX runtime)
+                  ├─ Wicofe-Lib (shared Rust libraries)
                   ├─ Frenit (Free Init; PID 1 integration is not yet implemented)
                   ├─ Mysh (planned default shell integration)
                   ├─ WPM (package manager)
@@ -51,7 +54,7 @@ The planned user experience is a text-based installation CLI started with `wicof
 ## Architecture and planning
 
 - [Frenit repository](https://github.com/Waizusora/Frenit) — canonical init implementation; Wicofe integration contract remains proposed.
-
+- [Unix userspace foundation specification](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — WFH, Wlibc POSIX runtime and timezone architecture.
 - [System architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Architecture decision records](decisions/README.md)
