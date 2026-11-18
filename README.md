@@ -12,7 +12,7 @@ Wicofe is an independent Unix-like operating system project built around a Rust-
 - A kernel-owned VFS with ONWFS as the planned native filesystem.
 - Unix-like userspace targeting POSIX conformance through a native Wicofe ABI.
 - Traditional Unix filesystem hierarchy (WFH), with system layout and mount responsibilities specified by Wicofe.
-- Wlibc, based on a planned musl fork, as the native ISO C/POSIX C runtime; GNU and BSD compatibility extensions are not project targets.
+- [Wlibc](https://github.com/Waizusora/WLibc), based on a planned musl fork, as the native ISO C/POSIX C runtime; GNU and BSD compatibility extensions are not project targets.
 - IANA TZ Database/TZif in userspace; the kernel provides UTC-based clocks and monotonic time.
 - Rust `std` for userspace where practical; FFI only at necessary OS or library boundaries.
 - MPL-2.0 for original Wicofe components, with dependency-by-dependency license and provenance review.
