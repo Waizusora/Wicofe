@@ -57,10 +57,10 @@ These are project decisions and targets, not claims of completed support.
 | Kernel implementation and VFS integration | Wicofe-Kernel |
 | Native filesystem format and implementation | ONWFS |
 | Driver core, DKM loader, and privileged DKM ABI | Wicofe-Kernel |
-| Concrete optional driver implementations and driver-specific packaging | Wicofe-Drivers |
+| Concrete optional driver implementations and driver-specific packaging | Wicofe-Driver |
 | C runtime and libc integration | Wicofe-Libc |
 | Shared userspace libraries | Wicofe-Lib |
-| PID 1, service definitions, dependency resolution, supervision and shutdown | [Osynit](https://github.com/Waizusora/Osynit) |
+| PID 1, service definitions, dependency resolution, supervision and shutdown | [Frenit](https://github.com/Waizusora/Frenit) |
 | Package format and package operations | WPM |
 | Whole-system release discovery, staging, activation and rollback | Wicofe-Update |
 | Image manifest, system image composition and release artifacts | Wicofe-Image |
@@ -69,7 +69,7 @@ These are project decisions and targets, not claims of completed support.
 | Recovery environment, repair and restore | Wicofe-Recovery |
 | Desktop session and compositor | WDE |
 
-Osynit is Wicofe's userspace initializer and service lifecycle supervisor. Its mandatory Core Init responsibilities, optional modules, single-executable model and external-service boundary are defined in the [Osynit system specification](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md). The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
+Frenit is Wicofe's userspace initializer and service lifecycle supervisor. Its mandatory Core Init responsibilities, optional modules, single-executable model and external-service boundary are defined in the [Frenit project overview](https://github.com/Waizusora/Frenit/blob/main/README.md). The owning repository maintains implementation details; this documentation repository records system-wide decisions and links to canonical specifications.
 
 The userspace syscall ABI is owned by [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI). The separate privileged DKM ABI is owned by [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel); it must not be treated as the userspace syscall ABI. See the kernel repository's [ABI boundary specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/ABI_BOUNDARIES.md).
 
