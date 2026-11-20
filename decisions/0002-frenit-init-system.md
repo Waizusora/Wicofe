@@ -3,7 +3,7 @@
 - **Status:** Accepted project naming and repository ownership; runtime architecture remains proposed
 - **Date:** 2026-11-18
 - **Canonical project:** [Frenit](https://github.com/Waizusora/Frenit)
-- **Cross-component contract:** [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
+- **Cross-component contract:** [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
 
 ## Context
 
@@ -16,7 +16,7 @@ Wicofe requires a native userspace init system. The canonical implementation rep
 3. The executable, Cargo package, library crate, and command prefix are `frenit`.
 4. The CLI command shape is `frenit <domain> <action> [argument]`; help and version entry points are `frenit help [domain]` and `frenit --version`.
 5. The CLI naming conventions are `diagnostic`, `dependent`, and `command` (singular).
-6. The Frenit repository is authoritative for its implementation. Wicofe-Kernel owns kernel mechanisms; Wicofe-ABI owns public syscall contracts; Wicofe-Specs owns cross-component requirements; Wicofe-Tests owns integration/conformance tests.
+6. The Frenit repository is authoritative for its implementation. Wicofe-Kernel owns kernel mechanisms; Wicofe-ABI owns public syscall contracts; Wicofe-Spec owns cross-component requirements; Wicofe-Test owns integration/conformance tests.
 7. PID 1 startup, process lifecycle, signal/wait semantics, service IPC, shutdown, and boot-image handoff remain integration prerequisites. No unsupported kernel syscall or runtime capability may be assumed.
 8. The current Frenit README explicitly identifies the code as an early foundation and not yet safe to install as PID 1. Wicofe must preserve that status until native conformance evidence exists.
 
@@ -30,4 +30,4 @@ Wicofe requires a native userspace init system. The canonical implementation rep
 ## References
 
 - [Frenit README and CLI convention](https://github.com/Waizusora/Frenit/blob/main/README.md)
-- [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Specs/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
+- [Frenit Integration Contract 0.1](https://github.com/Waizusora/Wicofe-Spec/blob/main/boot/FRENIT_INTEGRATION_CONTRACT_0.1.md)
