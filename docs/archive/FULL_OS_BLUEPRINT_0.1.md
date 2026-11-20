@@ -8,7 +8,7 @@
 - **Original project license:** MPL-2.0
 - **Policy:** No GNU GPL, LGPL, or AGPL dependencies in the supported default system
 
-> **Archive notice:** This 0.1 document is retained for historical context only. It predates the current repository split and contains outdated repository names, ownership assignments, and planned component assumptions. Use the current [project architecture](../ARCHITECTURE.md), [roadmap](../ROADMAP.md), [repository map](../REPOSITORY_MAP.md), and [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) instead. Do not treat this archived file as an authoritative specification.
+> **Archive notice:** This 0.1 document is retained for historical context only. It predates the current repository split and contains outdated repository names, ownership assignments, and planned component assumptions. Use the current [project architecture](../ARCHITECTURE.md), [roadmap](../ROADMAP.md), [repository map](../REPOSITORY_MAP.md), and [central documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) instead. Do not treat this archived file as an authoritative specification.
 
 > This document is a roadmap and architecture plan. It does not claim that the listed subsystems are implemented. Each component must have its own specification, repository ownership, implementation milestones, and license audit.
 
