@@ -58,7 +58,7 @@ These are project decisions and targets, not claims of completed support.
 | Native filesystem format and implementation | ONWFS |
 | Driver core, DKM loader, and privileged DKM ABI | Wicofe-Kernel |
 | Concrete optional driver implementations and driver-specific packaging | Wicofe-Driver |
-| C runtime and libc integration | Wicofe-Libc |
+| C runtime and libc integration | WLibc |
 | Shared userspace libraries | Wicofe-Lib |
 | PID 1, service definitions, dependency resolution, supervision and shutdown | [Frenit](https://github.com/Waizusora/Frenit) |
 | Package format and package operations | WPM |
