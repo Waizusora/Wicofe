@@ -1,6 +1,6 @@
 # Wicofe Repository Map
 
-This document defines the intended responsibility of each Wicofe repository. It is a project map, not a statement that all repositories already contain working implementations. For per-repository documentation ownership and canonical technical indexes, see the [Wicofe-Docs repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md).
+This document defines the intended responsibility of each Wicofe repository. It is a project map, not a statement that all repositories already contain working implementations. For per-repository documentation ownership and canonical technical indexes, see the [Wicofe-Doc repository documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md).
 
 ## Core and interfaces
 
@@ -19,11 +19,11 @@ This document defines the intended responsibility of each Wicofe repository. It 
 | [Frenit](https://github.com/Waizusora/Frenit) | Free Init; init-system and service-management implementation for Wicofe |
 | [WPM](https://github.com/Waizusora/WPM) | Package manager, package metadata/format, repositories, dependency and transaction model |
 | [Wicofe-Storage](https://github.com/Waizusora/Wicofe-Storage) | Userspace storage discovery, partitioning, formatting, mount and volume tools; kernel storage interfaces remain in Kernel |
-| [Wicofe-Drivers](https://github.com/Waizusora/Wicofe-Drivers) | Driver source/packaging and DKM integration guidance; core driver framework remains in Kernel |
-| [Wicofe-Services](https://github.com/Waizusora/Wicofe-Services) | Userspace daemons such as device, logging, user/session, power, and system service components |
+| [Wicofe-Driver](https://github.com/Waizusora/Wicofe-Driver) | Driver source/packaging and DKM integration guidance; core driver framework remains in Kernel |
+| [Wicofe-Service](https://github.com/Waizusora/Wicofe-Service) | Userspace daemons such as device, logging, user/session, power, and system service components |
 | [Wicofe-Network](https://github.com/Waizusora/Wicofe-Network) | Network userspace services, configuration, diagnostics, and protocol utilities |
 | [Wicofe-Input](https://github.com/Waizusora/Wicofe-Input) | Input stack userspace integration, device policy, configuration, and utilities |
-| [Wicofe-Graphics](https://github.com/Waizusora/Wicofe-Graphics) | Graphics userspace stack, display integration, rendering support, and related tools |
+| [Wicofe-Graphic](https://github.com/Waizusora/Wicofe-Graphic) | Graphics userspace stack, display integration, rendering support, and related tools |
 | [Wicofe-Audio](https://github.com/Waizusora/Wicofe-Audio) | Audio services, routing, device policy, and userspace audio APIs |
 
 ## User experience and lifecycle
@@ -43,16 +43,16 @@ This document defines the intended responsibility of each Wicofe repository. It 
 |---|---|
 | [Wicofe-Build](https://github.com/Waizusora/Wicofe-Build) | Build orchestration, toolchain pinning, cross-compilation, image pipeline |
 | [Wicofe-SDK](https://github.com/Waizusora/Wicofe-SDK) | Developer SDK, target definitions, headers, templates, sysroot and tooling integration |
-| [Wicofe-Ports](https://github.com/Waizusora/Wicofe-Ports) | Port recipes, patches, build metadata, and upstream tracking |
+| [Wicofe-Port](https://github.com/Waizusora/Wicofe-Port) | Port recipes, patches, build metadata, and upstream tracking |
 
 ## Project-wide engineering repositories
 
 | Repository | Responsibility |
 |---|---|
-| [Wicofe-Tools](https://github.com/Waizusora/Wicofe-Tools) | Shared development tooling, repository validation, release helpers, and audit utilities |
-| [Wicofe-Docs](https://github.com/Waizusora/Wicofe-Docs) | User, administrator, developer, and contributor documentation |
-| [Wicofe-Specs](https://github.com/Waizusora/Wicofe-Specs) | Normative cross-component specifications and compatibility contracts |
-| [Wicofe-Tests](https://github.com/Waizusora/Wicofe-Tests) | Cross-repository integration, conformance, regression, and system tests |
+| [Wicofe-Tool](https://github.com/Waizusora/Wicofe-Tool) | Shared development tooling, repository validation, release helpers, and audit utilities |
+| [Wicofe-Doc](https://github.com/Waizusora/Wicofe-Doc) | User, administrator, developer, and contributor documentation |
+| [Wicofe-Spec](https://github.com/Waizusora/Wicofe-Spec) | Normative cross-component specifications and compatibility contracts |
+| [Wicofe-Test](https://github.com/Waizusora/Wicofe-Test) | Cross-repository integration, conformance, regression, and system tests |
 | [Wicofe-ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty) | Third-party inventory, provenance, license records, and patch tracking |
 
 These repositories now exist. Their initial README files define scope and ownership; implementation, policy adoption, and CI coverage are separate milestones.
@@ -62,7 +62,7 @@ These repositories now exist. Their initial README files define scope and owners
 1. Kernel mechanisms and VFS implementation belong in Wicofe-Kernel.
 2. ABI definitions belong in Wicofe-ABI; kernel and userspace implementations must not independently redefine them.
 3. ONWFS owns its disk-format specification and filesystem-specific tests; Kernel owns VFS integration.
-4. Wicofe-Drivers does not duplicate the kernel's driver core.
-5. Frenit owns its init-system and service-management implementation; individual daemons belong to Wicofe-Services or their subsystem.
+4. Wicofe-Driver does not duplicate the kernel's driver core.
+5. Frenit owns its init-system and service-management implementation; individual daemons belong to Wicofe-Service or their subsystem.
 6. WDE is a userspace desktop and must not require private kernel APIs.
-7. Cross-repository integration tests should eventually be centralized in Wicofe-Tests.
+7. Cross-repository integration tests should eventually be centralized in Wicofe-Test.
