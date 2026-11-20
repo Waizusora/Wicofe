@@ -43,25 +43,25 @@ This is a target architecture, not a statement that every component is implement
 
 See [Project documentation index](docs/INDEX.md) and [Repository map](docs/REPOSITORY_MAP.md) for whole-system architecture, repository ownership, and cross-project responsibilities.
 
-The [central documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) links each component to its own technical documentation.
+The [central documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) links each component to its own technical documentation.
 
-Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tools) · [Docs](https://github.com/Waizusora/Wicofe-Docs) · [Specs](https://github.com/Waizusora/Wicofe-Specs) · [Tests](https://github.com/Waizusora/Wicofe-Tests) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
+Project-wide engineering repositories: [Tools](https://github.com/Waizusora/Wicofe-Tool) · [Docs](https://github.com/Waizusora/Wicofe-Doc) · [Specs](https://github.com/Waizusora/Wicofe-Spec) · [Tests](https://github.com/Waizusora/Wicofe-Test) · [ThirdParty](https://github.com/Waizusora/Wicofe-ThirdParty).
 
 ## Installation and release direction
 
-The planned user experience is a text-based installation CLI started with `wicofe-install`, followed by user-initiated updates from Terminal. The project-defined **Delivery Release** model targets roughly monthly stable deliveries without a fixed release deadline, with urgent security fixes delivered out of band when validated. These are plans, not implemented capabilities; see the [system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Docs/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md).
+The planned user experience is a text-based installation CLI started with `wicofe-install`, followed by user-initiated updates from Terminal. The project-defined **Delivery Release** model targets roughly monthly stable deliveries without a fixed release deadline, with urgent security fixes delivered out of band when validated. These are plans, not implemented capabilities; see the [system delivery and installation direction 0.1](https://github.com/Waizusora/Wicofe-Doc/blob/main/SYSTEM_DELIVERY_AND_INSTALLATION_DIRECTION_0.1.md).
 
 ## Architecture and planning
 
 - [Frenit repository](https://github.com/Waizusora/Frenit) — canonical init implementation; Wicofe integration contract remains proposed.
-- [Unix userspace foundation specification](https://github.com/Waizusora/Wicofe-Specs/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — WFH, Wlibc POSIX runtime and timezone architecture.
+- [Unix userspace foundation specification](https://github.com/Waizusora/Wicofe-Spec/blob/main/userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — WFH, Wlibc POSIX runtime and timezone architecture.
 - [System architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Architecture decision records](decisions/README.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
-- [Project governance](https://github.com/Waizusora/Wicofe-Docs/blob/main/GOVERNANCE.md)
-- [License and third-party policy](https://github.com/Waizusora/Wicofe-Docs/blob/main/LICENSE_POLICY.md)
+- [Project governance](https://github.com/Waizusora/Wicofe-Doc/blob/main/GOVERNANCE.md)
+- [License and third-party policy](https://github.com/Waizusora/Wicofe-Doc/blob/main/LICENSE_POLICY.md)
 
 ## Project principles
 
@@ -77,4 +77,4 @@ Original Wicofe code is intended to use the Mozilla Public License 2.0 (MPL-2.0)
 
 ## Wicofe-wide principles
 
-Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Docs/blob/main/PROJECT_PRINCIPLES.md).
+Wicofe is an independent Unix-like, POSIX-compatible operating system and software ecosystem, designed as an alternative to established and widely adopted software ecosystems and technologies, including GNU. Native components must use Wicofe interfaces and must not require Linux libc or GNU compatibility layers. Prefer permissive licenses; avoid GPL/AGPL, and consider LGPL only when no suitable permissive alternative exists. Reuse or fork upstream software when implementing it from scratch would be disproportionately difficult. See the [canonical project principles](https://github.com/Waizusora/Wicofe-Doc/blob/main/PROJECT_PRINCIPLES.md).
